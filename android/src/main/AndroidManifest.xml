@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-<receiver android:name="com.lina.smsplugin.SmsPlugin$SmsReceiver">
-    <intent-filter>
-        <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-    </intent-filter>
-</receiver>
+    <receiver android:name="com.lina.smsplugin.SmsPlugin$SmsReceiver">
+        <intent-filter>
+            <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        </intent-filter>
+    </receiver>
 </manifest>
