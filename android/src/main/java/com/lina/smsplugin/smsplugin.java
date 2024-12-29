@@ -29,7 +29,7 @@ public class SmsPlugin extends Plugin {
                             data.put("message", messageBody);
 
                             // Émettez un événement vers le front-end
-                            SmsPlugin plugin = SmsPlugin.this;
+                            SmsPlugin plugin = new SmsPlugin();//SmsPlugin.this;
                             plugin.notifyListeners("onSmsReceived", data);
                         }
                     }
