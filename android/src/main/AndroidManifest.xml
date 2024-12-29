@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yourapp">
+    package="com.lina.smsplugin" xmlns:tools="http://schemas.android.com/tools">
+
     
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
@@ -13,8 +14,7 @@
         android:theme="@style/AppTheme">
 
         <receiver
-            android:name="com.lina.smsplugin.SmsPlugin$SmsReceiver"
-            android:exported="true">
+            android:name="com.lina.smsplugin.SmsPlugin$SmsReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
