@@ -10,7 +10,7 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.JSObject;
 
 @CapacitorPlugin(name = "SmsPlugin")
-public class SmsPlugina extends Plugin {
+public class SmsPlugin extends Plugin {
     public static class SmsReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
